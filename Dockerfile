@@ -5,7 +5,7 @@ COPY . /opt/app
 
 WORKDIR /opt/app
 
-RUN go build -o test-cicd cmd/main.go
+RUN go build -o test-cicd main.go
 
 FROM alpine:3.18
 LABEL authors="Brigant"
