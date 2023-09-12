@@ -5,7 +5,7 @@ import (
 )
 
 func TestSum(t *testing.T) {
-	if Sum(1, 2) != 4 {
+	if Sum(1, 2) != 3 {
 		t.Error("Sum(1, 2)!= 3")
 	}
 }
