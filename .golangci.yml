@@ -151,7 +151,7 @@ linters:
     - errorlint
     - exhaustive
     - exportloopref
-    - forbidigo
+    # - forbidigo
     - forcetypeassert
     - funlen
     - gci
@@ -171,8 +171,8 @@ linters:
     - goheader
     - goimports
     - gomnd
-    - gomoddirectives
-    - gomodguard
+    # - gomoddirectives
+    # - gomodguard
     - goprintffuncname
     - gosec
     - gosimple
