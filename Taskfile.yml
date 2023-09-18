@@ -12,3 +12,7 @@ tasks:
   run:
     cmds:
       - go run main.go
+
+  lintcheck:
+    cmds:
+      - golangci-lint run
