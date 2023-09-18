@@ -37,3 +37,4 @@ jobs:
                     cd /app/Golang-CICD  
                     git pull
                     task build
+                    
