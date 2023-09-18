@@ -1,11 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
-	fmt.Println("Hello World")
-}
+	r := gin.Default()
+	r.GET("/ping", func(c *gin.Context) {
+		c.JSON(http.StatusOK, gin.H{
+			"message": "pong",
+		})
+	})
 
-func Sum(a, b int) int {
-	return a + b
+	if err := r.Run(":7001"); err != nil {
+		panic(err)
+	}
 }

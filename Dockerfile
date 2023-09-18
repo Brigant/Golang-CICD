@@ -14,6 +14,6 @@ COPY --from=builder /opt/app/test-cicd /opt/app/test-cicd
 
 WORKDIR /opt/app
 
-EXPOSE 7000
+EXPOSE 7001
 
 ENTRYPOINT ./test-cicd

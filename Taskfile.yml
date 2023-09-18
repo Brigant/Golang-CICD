@@ -1,0 +1,14 @@
+version: "3"
+
+tasks:
+  build:
+    cmds:
+      - docker compose -f production.yml up -d --build
+      
+  stop:
+    cmds:
+      - docker compose -f production.yml down
+
+  run:
+    cmds:
+      - go run main.go
